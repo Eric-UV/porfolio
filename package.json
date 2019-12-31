@@ -1,0 +1,33 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "my portfolio template",
+  "main": "main.js",
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "build": "webpack -p"
+  },
+  "keywords": [
+    "porfolio",
+    "learning",
+    "demo",
+    "sass",
+    "etc"
+  ],
+  "author": "Eric D. Gómez",
+  "license": "ISC",
+  "dependencies": {
+    "css-loader": "^3.3.2",
+    "handlebars": "^4.5.3",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.0",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack-dev-server": "^3.9.0"
+  }
+}

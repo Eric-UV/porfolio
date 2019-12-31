@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+/* Variables */
+$primary-color: #4caf50;
+$secondary-text-color: #ddd;
+$primary-text-color: #757575;
+
+/* General */
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Lato', sans-serif;    
+}
+
+hr {
+    border-top: 1px solid #eeeeee;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* */
+#wrapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+}
+
+#sidebar,#main-container {
+    padding: 10px;
+} 
+
+#the-icon {
+    font-size: 1.2rem;    
+}
+
+.opened {
+    width: 13rem;
+}
+
+.closed {
+    width: 1rem;
+}
+
+#sidebar {    
+    background-color: $primary-color;
+    color: $secondary-text-color;
+    display: flex;    
+    transition: width 2s;    
+    #icon-container {    
+        text-align: center;
+        margin: 0px auto;        
+    }    
+    #profile-picture {
+        border: 1px solid $secondary-text-color;
+        border-radius: 80px;
+        padding: 5px;
+        width: 150px;
+    }
+    #sidebar-menu {
+        text-align: center;
+        list-style-type: none;        
+        font-size: 1.2rem;
+        li {
+            margin: 15px 0px;
+        }
+    }
+    #sidebar-main-content {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;        
+        align-items: center;
+        justify-content: center;;
+    }
+    #sidebar-end {
+        text-align: center;
+    }   
+}
+
+.title {
+    font-size: 5rem;
+}
+
+.social-icon {
+    font-size: 3rem;
+    margin: 0px .5rem;
+}
+
+#main-container {
+    width: 100%;
+    color: $primary-text-color;
+}
+
+.stand-out-text {
+    color: $primary-color;
+}
+
+#about-container {
+    height: 80vh;
+    display: flex;    
+    justify-content: center;    
+    flex-direction: column;
+    margin: 0px 1rem; 
+}
+
+.exp-content {
+    max-width: 70%;
+}
+
+#experience-container {
+    height: 80vh;
+    margin: 0px 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#skills-container {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    margin: 0px 1.5rem;
+    justify-content: center;
+}
+
+#workflow-list {
+    padding: 0px 1.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .title {
+        font-size: 2rem;
+    }
+  }
